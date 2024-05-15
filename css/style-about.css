@@ -1,0 +1,397 @@
+/* Definindo a fonte padrão e plano de fundo do WebSite */
+html{
+    /* Plano de fundo do WebSite */
+    background-color: #e8e8e8;
+
+    /* Fonte de texto padrão do WebSite */
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    /* Proibição de scroll horizontal em caso de posição além dos 100% */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Retirando a borda branca que ficava em todo WebSite */
+body{
+    padding:0;
+    margin:0;
+}
+
+/* Definindo o espaço do cabeçalho do WebSite */
+.header-css{
+    width: 100%;
+    display: flex;
+}
+  
+/* Logo da empresa no rodapé do WebSite */
+.image-css{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    z-index: 3;
+}
+
+/* Posição do cabeçalho */
+.topic-css{
+    padding-right: 20px;
+    float: none;
+    position: absolute;
+    top:8%;
+    left:63% 
+}
+
+/* Personalização do botão do cabeçalho */
+.header-button{
+    padding: 20px;
+    border-radius: 7px;
+    color:#e8e8e8;
+    text-decoration: none;
+    background-color: #632eb8;
+}
+
+/* Alteração de cor quando o mouse se sobrepor no botão */
+.header-button:hover{
+    background-color: #5767f2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Linha roxa usada para transição ao fundo preto a seguir */
+.purple-background{
+    z-index: -1;
+    margin-top: 20px;
+    background-color: #632eb8;
+    width: 100%;
+    height: 100px;
+}
+
+/* Fundo preto em que ficará todo conteúdo do WebSite */
+.black-background{
+    z-index: -1;
+    background-color: #212121;
+    width: 100%;
+    height: 3800px;
+}
+
+/* Logo de nossa empresa */
+.enterprise-image{
+    width: 40%;
+    position: absolute;
+    float: none;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,50%);
+}
+
+/* Informações sobre a empresa */
+.info-text{
+    margin: auto;
+    width: 60%;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color:#e8e8e8;
+    font-size: 26px;
+    margin-top: 400px;
+    margin-bottom: 200px;
+    
+}
+
+/* Título que fala sobre a equipe */
+.title-team{
+    color: #e8e8e8;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+    padding: 40px;
+}
+
+/* Plano de fundo do membro 1: Alysson */
+.member-1{
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 500px;
+    margin-bottom: -18px;
+    display: flex;
+}
+
+/* Plano de fundo do membro 2: Cauã */
+.member-2{
+    background-color: #632eb8;
+    width: 100%;
+    height: 500px;
+    margin-bottom: -18px;
+    display: flex;
+}
+
+/* Plano de fundo do membro 3: Diego */
+.member-3{
+    background-color: #414141;
+    width: 100%;
+    height: 500px;
+    margin-bottom: -18px;
+    display: flex;
+}
+
+/* Localização de informação do membro Alysson */
+.member-info1{
+    position: relative;
+    left: -43%;
+    align-items: center;
+    width:50%;
+}
+
+/* Localização de informação do membro Cauã */
+.member-info2{
+    float: right;
+    position: relative;
+    right: -23%;
+    width: 50%;
+    transform: translate(-30%);
+}
+
+/* Localização de informação do membro Diego */
+.member-info3{
+    position: relative;
+    left: -43%;
+    align-items: center;
+    width:50%;
+}
+
+/* Nome membro */
+.name-member{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    font-size: 40px;
+    margin-bottom: 0;
+    
+    position: relative;
+    left: 8%;
+}
+
+/* Cor do membro Alysson */
+.name-member.m1{
+    color: #632eb8;
+}
+
+/* Cor do membro Cauã */
+.name-member.m2{
+    color: #e8e8e8;
+}
+
+/* Cor do membro Diego */
+.name-member.m3{
+    color: #e8e8e8;
+}
+
+/* Personalização do texto */
+.text-member{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    width: 70%;
+}
+
+/* Cor do texto Alysson */
+.text-member.m1{
+    color: #632eb8;
+}
+
+/* Cor do texto Cauã */
+.text-member.m2{
+    color: #e8e8e8;
+}
+
+/* Cor do texto Diego */
+.text-member.m3{
+    color: #e8e8e8;
+}
+
+/* Personalização da imagem de cada membro */
+.img-member{
+    z-index: 1;
+    object-fit: cover;
+    height: 96.5%;
+    width: 50%;
+}
+
+/* Posição da imagem do Alysson */
+.img-member.m1{
+    position: relative;
+    left:100%;
+    transform: translate(-100%);
+    float: right;
+}
+
+/* Posição da imagem do Cauã */
+.img-member.m2{
+    position: relative;
+    float: left;
+}
+
+/* Posição da imagem do Diego */
+.img-member.m3{
+    position: relative;
+    left:100%;
+    transform: translate(-100%);
+    float: right;
+}
+
+/* Linha Roxa */
+.line-purple{
+    background-color: #632eb8;
+    width: 100%;
+    height: 50px;
+}
+
+/* Botões de retroceder e proceder */
+.button-change{
+    font-size: 80px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #632eb8;
+    color: #e8e8e8;
+
+    margin-top: 30%;
+    transition: 0.6s;
+}
+
+/* Troca de cor quando o mouse sobrepor o botão */
+.button-change:hover{
+    background-color: #5767f2;
+}
+
+/* Tamanho da imagem */
+.image-process{
+    z-index: -1;
+    padding: 50px;
+    width: 870px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Posição dos botões */
+.button-image{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Rodapé do WebSite */
+.info-footer{
+    margin-top: -40px;
+    width: 100%;
+    height: 500px;
+    background-color: #212121;
+}
+
+/* Definição pro tipo flex */
+.info-footer-contend{
+    display: flex;
+    justify-content: center;
+}
+
+/* Aba com os conteúdos do rodapé */
+.tab-footer{
+    width: 100%;
+    position: relative;
+    transform: translate(0%,35%);
+    height: 300px;
+}
+
+/* Personalização do contato */
+.tab-footer.contact{
+    background-color: #e8e8e8;
+    color: #632eb8;
+    text-align: center;
+}
+
+.contact-title{
+    color: #632eb8;
+}
+
+/* Definição de cor da Aba de Contato */
+.contact-text{
+    color: #632eb8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.contact-text:hover{
+    color: #b457f2;
+}
+
+/* Personalização da Navegação */
+.tab-footer.navegation{
+    background-color: #632eb8;
+}
+
+/* Personalização das Redes Sociais */
+.tab-footer.socialmedia{
+    background-color: #414141;
+}
+
+/* Títulos das Abas */
+h2{
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+/* Colorindo os redirecionamento */
+a{
+    color: #e8e8e8;
+}
+
+/* Definindo os textos da nav */
+span{
+    position: relative;
+    left: 3%;
+    font-size: 20px;
+    color: #e8e8e8;
+}
+
+/* Posicionamento dos botões do Rodapé */
+.nav-css{
+    text-align: center;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Personalização do texto */
+.a-css{
+    font-size: 20px;
+    line-height: 2.3;
+    float: none;
+    text-align: center;
+    text-decoration: none;
+
+    transition-duration: 0.3s;
+}
+
+/* Troca de cor quando sobreposto o curso do mouse nela */
+.a-css:hover{
+    color: #b457f2;
+    transform: scale(1.1);
+}
+
+/* Nome da empresa */
+.enterprise-name{
+    position: relative;
+    top: 23%;
+    text-align: center;
+    color:#bdbdbd;
+    font-size: large;
+}

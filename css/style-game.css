@@ -1,0 +1,445 @@
+/* Definindo a fonte padrão e plano de fundo do WebSite */
+html{
+    /* Plano de fundo do WebSite */
+    background-color: #e8e8e8;
+
+    /* Fonte de texto padrão do WebSite */
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    /* Proibição de scroll horizontal em caso de posição além dos 100% */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Retirando a borda branca que ficava em todo WebSite */
+body{
+    padding:0;
+    margin:0;
+}
+
+/* Definindo o espaço do cabeçalho do WebSite */
+.header-css{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* Logo da empresa no rodapé do WebSite */
+.image-css{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    z-index: 3;
+
+    transition: 0.3s;
+}
+
+.image-css:hover{
+    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
+    transform: scale(1.1);
+}
+
+/* Posição do cabeçalho */
+.topic-css{
+    padding-top: 50px;
+    padding-right: 5%;
+    float: right;
+}
+
+/* Personalização do botão do cabeçalho */
+.header-button{
+    padding: 20px;
+    border-radius: 7px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    text-decoration: none;
+    color:#e8e8e8;
+    background-color: #632eb8;
+    transition: 0.4s;
+}
+
+/* Alteração de cor quando o mouse se sobrepor no botão */
+.header-button:hover{
+    background-color: #5767f2;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    transform: scale(1.1);
+}
+
+.purple-background{
+    z-index: -1;
+    margin-top: 20px;
+    background-color: #632eb8;
+    width: 100%;
+    height: 100px;
+}
+
+.black-background{
+    z-index: -1;
+    background-color: #212121;
+    width: 100%;
+    height: 3300px;
+}
+
+iframe{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.video{
+    position: relative;
+    top: 18%;
+}
+
+.video-background{
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    filter: brightness(50%);
+}
+
+.game-css{
+    width: 350px;
+    position: relative;
+    top: -370px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.title-about{
+    margin-top: 400px;
+    margin-bottom: auto;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #e8e8e8;
+}
+
+.title-available{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #e8e8e8;
+}
+
+.game-info{
+    border-radius: 15px;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.info-text{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+    font-size: 25px;
+    color: #e8e8e8;
+}
+
+.features-title{
+    font-size: 40px;
+}
+
+.features-content{
+    position: absolute;
+    left: 55%;
+    width: 40%;
+}
+
+ul{
+    font-size: 25px;
+    text-align: left;
+}
+ul li{
+    padding: 20px;
+}
+
+.info-features{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #e8e8e8;
+    display: flex;
+    margin-top: 200px;
+    background-color: #632eb8;
+    width: 100%;
+    height: 500px;
+}
+
+.info-image-size{
+    background-size:cover;
+    height: 500px;
+    width: 50%;
+
+    animation-name: changeAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeAnimation{
+    0%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    15%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    30%{
+        background-image: url(../imagem/game2.jpg);
+    }
+    45%{
+        background-image: url(../imagem/game2.jpg);
+    }
+    60%{
+        background-image: url(../imagem/game3.jpg);
+    }
+    75%{
+        background-image: url(../imagem/game3.jpg);
+    }
+    90%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    100%{
+        background-image: url(../imagem/game1.jpg);
+    }
+}
+
+.itch-css{
+    text-align: center;
+    width: 100%;
+}
+
+.itch-image{
+    width: 25%;
+    transition: 0.3s;
+}
+.itch-image:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.5));
+}
+
+.info-characters{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: #632eb8;
+    display: flex;
+    
+}
+.image-css-characters{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(252,209,159,1) 0%, rgba(207,122,91,1) 25%, rgba(33,33,33,1) 65%, rgba(33,33,33,1) 100%);
+    border: solid 3px #431381;
+    border-radius: 25px;
+    margin: 50px;
+    border: solid 5px #e8e8e8;
+
+    transition: 0.3s;
+}
+
+.name-characters{
+    display: flex;
+}
+
+.name-char{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #e8e8e8;
+    margin-top: 60px;
+
+    transition: 0.3s;
+}
+
+.button-change{
+    margin-top: 60px;
+    z-index: 2;
+    font-size: 30px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    transition: 0.3s;
+}
+
+.button-change:hover{
+    background-color: #212121;
+    color: #e8e8e8;
+}
+
+.describe-characters{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #e8e8e8;
+    padding: 0;
+
+    position: absolute;
+    left:57%;
+    top:455%;
+}
+.describe-txt{
+    transition: 0.3s;
+    max-width: 70%;
+}
+
+.title-characters{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #e8e8e8;
+    margin-top: 50px;
+}
+
+/* Rodapé do WebSite */
+.info-footer{
+    margin-top: -40px;
+    width: 100%;
+    height: 500px;
+    background-color: #212121;
+}
+
+/* Definição pro tipo flex */
+.info-footer-contend{
+    display: flex;
+    justify-content: center;
+}
+
+/* Aba com os conteúdos do rodapé */
+.tab-footer{
+    width: 100%;
+    position: relative;
+    transform: translate(0%,35%);
+    height: 300px;
+}
+
+/* Personalização do contato */
+.tab-footer.contact{
+    background-color: #e8e8e8;
+    color: #632eb8;
+    text-align: center;
+}
+
+.contact-title{
+    color: #632eb8;
+}
+
+/* Definição de cor da Aba de Contato */
+.contact-text{
+    color: #632eb8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.contact-text:hover{
+    color: #b457f2;
+}
+
+/* Personalização da Navegação */
+.tab-footer.navegation{
+    background-color: #632eb8;
+}
+
+/* Personalização das Redes Sociais */
+.tab-footer.socialmedia{
+    background-color: #414141;
+}
+
+/* Títulos das Abas */
+h2{
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+/* Colorindo os redirecionamento */
+a{
+    color: #e8e8e8;
+}
+
+/* Definindo os textos da nav */
+span{
+    position: relative;
+    left: 3%;
+    font-size: 20px;
+    color: #e8e8e8;
+}
+
+/* Posicionamento dos botões do Rodapé */
+.nav-css{
+    text-align: center;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Personalização do texto */
+.a-css{
+    font-size: 20px;
+    line-height: 2.3;
+    float: none;
+    text-align: center;
+    text-decoration: none;
+
+    transition-duration: 0.3s;
+}
+
+/* Troca de cor quando sobreposto o curso do mouse nela */
+.a-css:hover{
+    color: #b457f2;
+    transform: scale(1.1);
+}
+
+/* Nome da empresa */
+.enterprise-name{
+    position: relative;
+    top: 23%;
+    text-align: center;
+    color:#bdbdbd;
+    font-size: large;
+}
