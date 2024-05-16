@@ -20,6 +20,7 @@ body{
     margin:0;
 }
 
+
 /* Definindo o espaço do cabeçalho do WebSite */
 .header-css{
     width: 100%;
@@ -119,12 +120,18 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    transition: 0.3s;
 
     width: 100%;
 
     padding: 10px;
     text-decoration: none;
     color: #212121;
+}
+
+.modal-button:hover{
+    background-color: #5767f2;
+    color: #e8e8e8;
 }
 
 .video-background-css{
