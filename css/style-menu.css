@@ -492,15 +492,21 @@ span{
         height: 250px;
     }
 
+    .navs-socialmedia{
+        position: absolute;
+        left: -5%;
+    }
+
     .social-button{
         margin-inline: 10px;
-        padding: 30px;
+        padding: 40px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
     i{
-        font-size: 30px;
+        justify-content: center;
+        font-size: 40px;
     }
 
     .info-footer{
