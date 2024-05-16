@@ -286,8 +286,6 @@ h1{
 }
 /* Redimensionamento das logos das Redes Sociais */
 i{
-    position: relative;
-    top:25%;
     font-size: 100px;
 }
 
@@ -489,18 +487,35 @@ span{
     }
 
     .info-socialmedia-content{
-        height: 250px;
+        height: 200px;
+    }
+
+    .navs-socialmedia{
+        padding: 0;
+    }
+
+    .navs-setting{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .social-button{
+        max-width: 100px;
+        text-align: center;
         margin-inline: 10px;
-        padding: 40px;
+        padding: 25px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
+    .social-button:hover{
+        border-radius: 50px;
+    }
+
     i{
-        justify-content: center;
+        position: inherit;
+        top: 50%;
         font-size: 40px;
     }
 
