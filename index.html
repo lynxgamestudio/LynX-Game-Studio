@@ -47,21 +47,21 @@
             </div>
 
             <script src="js/modal.js"></script>
-            <div class="open-modal">
-                <i class="fa-solid fa-bars" class="bars-modal" onclick="modal()"></i>
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
             </div>
+        </div>
 
-            <div class="modal">
-                <div class="modal-content">
-                    <nav>
-                        <!-- Botão de encaminhamento a página principal -->
-                        <a href="index.html" class="header-button">Página principal</a>
-                        <!-- Botão de encaminhamento a página sobre o jogo -->
-                        <a href="html/html-game.html" class="header-button">Burning Minds</a>
-                        <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
-                        <a href="html/html-about.html" class="header-button">Sobre nós</a>
-                    </nav>
-                </div>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html/html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html/html-about.html" class="modal-button">Sobre nós</a>
+                </nav>
             </div>
         </div>
     </header>
