@@ -74,6 +74,22 @@ body{
     transform: scale(1.1);
 }
 
+.open-modal{
+    display: none;
+    padding-right: 30px;
+    color: #632eb8;
+    transition: 0.3s;
+}
+
+.open-modal:hover{
+    color: #5767f2;
+    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
+}
+
+.modal{
+   display:none; 
+}
+
 .video-background-css{
     
     overflow: hidden;
@@ -205,6 +221,7 @@ h1{
 
 /* Personalização do botão que redireciona ao site sobre a Empresa */
 .about-css{
+    border: 0;
     position: relative;
     left: 20%;
     width: 300px;
@@ -219,6 +236,9 @@ h1{
 
 /* Alteração de cor e extensão quando sobreposto o cursor do mouse nela */
 .about-css:hover{
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     background-color: #5767f2;
     transform: scale(1.1);
 }
@@ -428,20 +448,12 @@ span{
 
 @media only screen and (max-width: 1000px){
     .header-css{
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
     }
 
     .image-css{
-        width: 30%;
-        margin: auto;
-    }
-
-    .topic-css{
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        padding-right: 0;
+        width: 40%;
     }
 
     .header-button{
@@ -542,6 +554,14 @@ span{
 
     .enterprise-name{
         top: 10%;
+    }
+
+    .open-modal{
+        display: block;
+    }
+
+    .topic-css{
+        display: none;
     }
 
 }
