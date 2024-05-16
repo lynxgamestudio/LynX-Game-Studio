@@ -261,6 +261,7 @@ h1{
 .navs-socialmedia{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
 }
@@ -446,11 +447,12 @@ span{
     }
 
     .header-button{
-        padding: 15px;
+        padding: 10px;
+        font-size: 13px;
     }
 
     .video-background-css{
-        padding-bottom: 300px;
+        padding-bottom: 400px;
     }
 
     .video-background{
@@ -463,18 +465,20 @@ span{
 
     .info-enterprise-content{
         margin: auto;
-        width: 400px;
+        width: 250px;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .info-text{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .about-css{
+        font-size: 15px;
+        width: 175px;
         left: 13%;
     }
 
@@ -490,13 +494,13 @@ span{
 
     .social-button{
         margin-inline: 10px;
-        padding: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     i{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .info-footer{
