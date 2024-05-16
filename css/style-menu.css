@@ -492,11 +492,6 @@ span{
         height: 250px;
     }
 
-    .navs-socialmedia{
-        position: absolute;
-        left: -5%;
-    }
-
     .social-button{
         margin-inline: 10px;
         padding: 40px;
