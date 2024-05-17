@@ -489,11 +489,16 @@ i{
 
 /* Definição de cor da Aba de Contato */
 .contact-text{
+    /* Cor do texto */
     color: #632eb8;
+
+    /* Posição */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
@@ -526,8 +531,11 @@ a{
 
 /* Definindo os textos da nav */
 span{
+    /* Posição */
     position: relative;
     left: 3%;
+
+    /* Customização */
     font-size: 20px;
     color: #e8e8e8;
 }
@@ -544,96 +552,125 @@ span{
 
 /* Personalização do texto */
 .a-css{
+    /* Fonte */
     font-size: 20px;
     line-height: 2.3;
     float: none;
     text-align: center;
     text-decoration: none;
 
+    /* Transição de animação em 0.3s */
     transition-duration: 0.3s;
 }
 
 /* Troca de cor quando sobreposto o curso do mouse nela */
 .a-css:hover{
     color: #b457f2;
+
+    /* Transição de escala em 1.1x de seu tamanho original */
     transform: scale(1.1);
 }
 
 /* Nome da empresa */
 .enterprise-name{
+    /* Posição */
     position: relative;
     top: 23%;
     text-align: center;
+
+    /* Fonte */
     color:#bdbdbd;
     font-size: large;
 }
 
+
+/* Formatação de tela para dispositivos mobiles */
 @media only screen and (max-width: 1000px){
+    /* Formatação do cabeçalho do WebSite */
+    /* Definição do flex em linha */
     .header-css{
         flex-direction: row;
         align-items: center;
     }
 
+    /* Definição do tamanho da logo a esquerda do cabeçalho */
     .image-css{
         width: 40%;
     }
 
-    .header-button{
-        padding: 10px;
-        font-size: 13px;
+    /* Ligando o botão lateral para abrir os botões */
+    .open-modal{
+        display: block;
     }
 
+    /* Desligando os botões do desktop */
+    .topic-css{
+        display: none;
+    }
+
+    /* Dando espaçamento abaixo do vídeo */
     .video-background-css{
         padding-bottom: 400px;
     }
 
+    /* Definição do tamanho do video */
     .video-background{
         height: 35vh;
     }
 
+    /* Definição do flex para coluna nas informações da empresa */
     .info-enterprise-css{
         flex-direction: column;
     }
 
+    /* Definição do tamanho dos textos */
     .info-enterprise-content{
         margin: auto;
         width: 250px;
     }
 
+    /* Definição da fonte do título */
     h1{
         font-size: 25px;
     }
 
+     /* Definição da fonte do texto */
     .info-text{
         font-size: 15px;
     }
 
+     /* Definição do tamanho e posição do botão */
     .about-css{
         font-size: 15px;
         width: 175px;
         left: 13%;
     }
 
+    /* Definição do tamanho e posição centralizada da imagem da empresa */
     .enterprise-image{
         padding-top: 30px;
         margin: auto;
         width: 60%;
     }
 
+    /* Definição do tamanho da aba de redes sociais */
     .info-socialmedia-content{
         height: 200px;
     }
 
+    /* Retirando a padding que causava o erro de posição dos botões */
     .navs-socialmedia{
         padding: 0;
     }
 
+    /* Definição centralizada dos botões */
     .navs-setting{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    /* Definição do tamanho dos botões */
     .social-button{
         max-width: 100px;
         text-align: center;
@@ -643,47 +680,41 @@ span{
         padding-right: 20px;
     }
 
-    .social-button:hover{
-        border-radius: 51px;
-    }
-
+    /* Definição das posições e tamanho dos ícones dos botões */
     i{
         position: inherit;
         top: 50%;
         font-size: 40px;
     }
 
+    /* Definição do tamanho do rodapé do WebSite */
     .info-footer{
         height: 750px;
     }
 
+    /* Definição do flex em coluna para ajuste */
     .info-footer-contend{
         flex-direction: column;   
     }
 
+    /* Definição dos tamanho da tab */
     .tab-footer{
         height: 200px;
     }
 
+    /* Definição das posições dos botões do rodapé */
     .nav-css{
         top: 60%;
     }
 
+    /* Definição da fonte dos links */
     .a-css{
         font-size: 15px;
         line-height: 2;
     }
 
+    /* Definição da posição do nome da empresa no final do WebSite */
     .enterprise-name{
         top: 10%;
     }
-
-    .open-modal{
-        display: block;
-    }
-
-    .topic-css{
-        display: none;
-    }
-
 }
