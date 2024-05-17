@@ -201,8 +201,6 @@ body{
     text-align: center;
     color:#e8e8e8;
     font-size: 26px;
-    margin-bottom: 200px;
-    
 }
 
 /* Título que fala sobre a equipe */
@@ -219,8 +217,9 @@ body{
     background-color: #e8e8e8;
     width: 100%;
     height: 500px;
-    margin-bottom: -18px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 /* Plano de fundo do membro 2: Cauã */
@@ -228,8 +227,9 @@ body{
     background-color: #632eb8;
     width: 100%;
     height: 500px;
-    margin-bottom: -18px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 /* Plano de fundo do membro 3: Diego */
@@ -237,32 +237,38 @@ body{
     background-color: #414141;
     width: 100%;
     height: 500px;
-    margin-bottom: -18px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 /* Localização de informação do membro Alysson */
 .member-info1{
-    position: relative;
-    left: -43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 0;
     width:50%;
 }
 
 /* Localização de informação do membro Cauã */
 .member-info2{
-    float: right;
-    position: relative;
-    right: -23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     width: 50%;
-    transform: translate(-30%);
 }
 
 /* Localização de informação do membro Diego */
 .member-info3{
-    position: relative;
-    left: -43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
     width:50%;
 }
 
@@ -271,12 +277,8 @@ body{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
     padding: 20px;
-    width: 50%;
+    margin: 0;
     font-size: 40px;
-    margin-bottom: 0;
-    
-    position: relative;
-    left: 8%;
 }
 
 /* Cor do membro Alysson */
@@ -296,7 +298,6 @@ body{
 
 /* Personalização do texto */
 .text-member{
-    position: absolute;
     text-align: center;
     font-size: 25px;
     width: 70%;
@@ -321,29 +322,22 @@ body{
 .img-member{
     z-index: 1;
     object-fit: cover;
-    height: 96.5%;
+    height: 100%;
     width: 50%;
 }
 
 /* Posição da imagem do Alysson */
 .img-member.m1{
-    position: relative;
-    left:100%;
-    transform: translate(-100%);
     float: right;
 }
 
 /* Posição da imagem do Cauã */
 .img-member.m2{
-    position: relative;
     float: left;
 }
 
 /* Posição da imagem do Diego */
 .img-member.m3{
-    position: relative;
-    left:100%;
-    transform: translate(-100%);
     float: right;
 }
 
@@ -543,5 +537,51 @@ span{
         width: 80%;
         margin-top: 0;
         font-size: 16px;
+    }
+
+    .title-team{
+        font-size: 40px;
+    }
+
+    .member-1{
+        flex-direction: column;
+    }
+
+    .member-2{
+        flex-direction: column;
+    }
+
+    .member-3{
+        flex-direction: column;
+    }
+
+    .name-member{
+        font-size: 20px;
+    }
+
+    .img-member{
+        width: 100%;
+        height: 50%;
+        float: none;
+    }
+    
+    .text-member{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .member-info1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .member-info2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .member-info3{
+        width: 100%;
+        height: 100%;
     }
 }
