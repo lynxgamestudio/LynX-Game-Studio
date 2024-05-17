@@ -183,12 +183,14 @@ body{
 
 /* Logo de nossa empresa */
 .enterprise-image{
-    width: 40%;
-    position: absolute;
-    float: none;
-    left: 50%;
-    top: 15%;
-    transform: translate(-50%,50%);
+    display: flex;
+    width: 35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
 }
 
 /* Informações sobre a empresa */
@@ -199,7 +201,6 @@ body{
     text-align: center;
     color:#e8e8e8;
     font-size: 26px;
-    margin-top: 400px;
     margin-bottom: 200px;
     
 }
@@ -502,7 +503,7 @@ span{
 }
 
 /* Formatação de tela para dispositivos mobiles */
-@media only screen and(max-width: 1000px){
+@media only screen and (max-width: 1000px){
     /* Formatação do cabeçalho do WebSite */
     /* Definição do flex em linha */
     .header-css{
@@ -523,5 +524,24 @@ span{
     /* Desligando os botões do desktop */
     .topic-css{
         display: none;
+    }
+
+    /* Definição das posições e tamanho dos ícones dos botões */
+    i{
+        position: inherit;
+        top: 50%;
+        font-size: 40px;
+    }
+
+    .enterprise-image{
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info-text{
+        width: 80%;
+        margin-top: 0;
+        font-size: 16px;
     }
 }
