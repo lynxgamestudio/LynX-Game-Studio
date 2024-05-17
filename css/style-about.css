@@ -20,10 +20,12 @@ body{
     margin:0;
 }
 
+
 /* Definindo o espaço do cabeçalho do WebSite */
 .header-css{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
   
 /* Logo da empresa no rodapé do WebSite */
@@ -32,31 +34,134 @@ body{
     padding: 10px;
     display: flex;
     z-index: 3;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
 }
 
 /* Posição do cabeçalho */
 .topic-css{
-    padding-right: 20px;
-    float: none;
-    position: absolute;
-    top:8%;
-    left:63% 
+    padding-top: 50px;
+    padding-right: 5%;
+    float: right;
 }
 
 /* Personalização do botão do cabeçalho */
 .header-button{
+    /* Fonte de texto */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    /* Customização */
     padding: 20px;
     border-radius: 7px;
-    color:#e8e8e8;
     text-decoration: none;
+    color:#e8e8e8;
     background-color: #632eb8;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.4s;
 }
 
 /* Alteração de cor quando o mouse se sobrepor no botão */
 .header-button:hover{
+    /* Cor de fundo */
     background-color: #5767f2;
-    -webkit-transform: scale(1.1);
+
+    /* Brilho ao redor do botão */
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+
+    /* Transição de escala em 1.1x de seu tamanho original*/
     transform: scale(1.1);
+}
+
+/* Botão de abrir o modal */
+.open-modal{
+    /* Definição como invisivel no formato desktop */
+    display: none;
+
+    /* Customização */
+    border: 0;
+    background-color: rgba(0,0,0,0.0);;
+    padding-right: 30px;
+    color: #632eb8;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
+}
+
+/* Mudar de cor quando sobrepor o mouse */
+.open-modal:hover{
+    color: #5767f2;
+
+    /* Brilho ao redor do botão */
+    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
+}
+
+/* Atributos para o modal, em base manter em None e executará o block quando clicado o botão de abrir */
+.modal{
+   /* Definição como invisivel até que seja executado no botão */ 
+   display:none;
+
+   /* Posição no topo dos restantes*/
+   z-index: 5;
+
+   /* Posição do Modal */
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+/* Conteúdo do modal */
+.modal-content{
+    /* Tamanho */
+    width: 50%;
+    margin: -5% 50%;
+
+    /* Cor e Borda*/
+    background-color: #e8e8e8;
+    border-radius: 10px;
+
+     /* Sombra */
+     -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     -webkit-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+}
+
+/* Direção dos botões em coluna */
+.modal-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Design do botão que fica no modal */
+.modal-button{
+    /* Definição da fonte */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+
+    /* Tamanho */
+    width: 100%;
+
+    /* Customização */
+    padding: 10px;
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Caso sobrepor o mouse, mudar de cor */
+.modal-button:hover{
+    background-color: #5767f2;
+    color: #e8e8e8;
 }
 
 /* Linha roxa usada para transição ao fundo preto a seguir */
@@ -394,4 +499,29 @@ span{
     text-align: center;
     color:#bdbdbd;
     font-size: large;
+}
+
+/* Formatação de tela para dispositivos mobiles */
+@media only screen and(max-width: 1000px){
+    /* Formatação do cabeçalho do WebSite */
+    /* Definição do flex em linha */
+    .header-css{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Definição do tamanho da logo a esquerda do cabeçalho */
+    .image-css{
+        width: 40%;
+    }
+
+    /* Ligando o botão lateral para abrir os botões */
+    .open-modal{
+        display: block;
+    }
+
+    /* Desligando os botões do desktop */
+    .topic-css{
+        display: none;
+    }
 }
