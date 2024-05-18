@@ -32,10 +32,10 @@
         <div class="header-css">
             <!-- Logo de nossa empresa, ao clicar, ela será redirecionado ao website sobre a empresa-->
             <div class="logo-css">
-                <a href="html-about.html"><img src="../imagem/lynx1.svg" alt="#" class="image-css"></a>
+                <img src="../imagem/lynx1.svg" alt="#" class="image-css">
             </div>
 
-            <!-- Botões de encaminhamento -->
+            <!-- Botões que redirecionam para as outras páginas -->
             <div class="topic-css">
                 <nav>
                     <!-- Botão de encaminhamento a página principal -->
@@ -44,6 +44,31 @@
                     <a href="html-game.html" class="header-button">Burning Minds</a>
                     <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
                     <a href="html-about.html" class="header-button">Sobre nós</a>
+                </nav>
+            </div>
+
+            <!-- Versão mobile/redimensionado abaixo -->
+
+            <!-- Script para executar o modal -->
+            <script src="../js/modal.js"></script>
+
+            <!-- Botão que executa o modal -->
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
+            </div>
+        </div>
+
+        <!-- Modal que mostrará os botões que redirecionam para as outras páginas -->
+        <div class="modal" id="myModal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="modal-button">Sobre nós</a>
                 </nav>
             </div>
         </div>
@@ -103,7 +128,7 @@
                 <!-- Descrição do membro-->
                 <div class="member-info3">
                     <h3 class="name-member m3"> Diego Augusto </h3>
-                    <p class="text-member m3">Sou designer geral do projeto e dos personagens e cenários do jogo, além de desenvolvedor front-end</p>
+                    <p class="text-member m3">Sou designer geral do projeto. Trabalho na montagem e elaboração dos mapas, personagens e ambientação. Programador Front-End do WebSite, procurando sempre mantê-lo atualizado e funcionando perfeitamente.</p>
                 </div>
             </div>
 
@@ -122,7 +147,7 @@
                 <div class="button-image">
                     <!-- Botão de retroceder a imagem anterior -->
                     <button class="button-change" onclick="opposite()">
-                        <i class="fa-solid fa-angle-left"></i>‎ <!-- Caractére Invisivel -->
+                        <i class="fa-solid fa-angle-left" id="button-position"></i>‎ <!-- Caractére Invisivel -->
                     </button>
 
                     <!-- Imagens da equipe -->
@@ -130,7 +155,7 @@
 
                     <!-- Botão de procede a imagem a seguir-->
                     <button class="button-change" onclick="next()">
-                        <i class="fa-solid fa-angle-right"></i>‎ <!-- Caractére Invisivel -->
+                        <i class="fa-solid fa-angle-right" id="button-position"></i>‎ <!-- Caractére Invisivel -->
                     </button>
                 </div>
             </div>

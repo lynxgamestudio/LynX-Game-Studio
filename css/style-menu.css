@@ -35,12 +35,8 @@ body{
     display: flex;
     z-index: 3;
 
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
-}
-
-.image-css:hover{
-    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
-    transform: scale(1.1);
 }
 
 /* Posição do cabeçalho */
@@ -52,68 +48,99 @@ body{
 
 /* Personalização do botão do cabeçalho */
 .header-button{
-    padding: 20px;
-    border-radius: 7px;
+    /* Fonte de texto */
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
 
+    /* Customização */
+    padding: 20px;
+    border-radius: 7px;
     text-decoration: none;
     color:#e8e8e8;
     background-color: #632eb8;
+
+    /* Transição de animação em 0.3s */
     transition: 0.4s;
 }
 
 /* Alteração de cor quando o mouse se sobrepor no botão */
 .header-button:hover{
+    /* Cor de fundo */
     background-color: #5767f2;
+
+    /* Brilho ao redor do botão */
     -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+
+    /* Transição de escala em 1.1x de seu tamanho original*/
     transform: scale(1.1);
 }
 
+/* Botão de abrir o modal */
 .open-modal{
+    /* Definição como invisivel no formato desktop */
     display: none;
+
+    /* Customização */
     border: 0;
     background-color: rgba(0,0,0,0.0);;
     padding-right: 30px;
     color: #632eb8;
+
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
+/* Mudar de cor quando sobrepor o mouse */
 .open-modal:hover{
     color: #5767f2;
+
+    /* Brilho ao redor do botão */
     filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
 }
 
+/* Atributos para o modal, em base manter em None e executará o block quando clicado o botão de abrir */
 .modal{
+   /* Definição como invisivel até que seja executado no botão */ 
    display:none;
+
+   /* Posição no topo dos restantes*/
    z-index: 5;
+
+   /* Posição do Modal */
    position: absolute;
    width: 100%;
    height: 100%;
 }
 
+/* Conteúdo do modal */
 .modal-content{
+    /* Tamanho */
     width: 50%;
     margin: -5% 50%;
+
+    /* Cor e Borda*/
     background-color: #e8e8e8;
     border-radius: 10px;
+
      /* Sombra */
      -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
      -webkit-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
      box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
 }
 
+/* Direção dos botões em coluna */
 .modal-nav{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+/* Design do botão que fica no modal */
 .modal-button{
     /* Definição da fonte */
     font-family: "Pixelify Sans", sans-serif;
@@ -122,34 +149,45 @@ body{
     font-style: normal;
     transition: 0.3s;
 
+    /* Tamanho */
     width: 100%;
 
+    /* Customização */
     padding: 10px;
     text-decoration: none;
     color: #212121;
 }
 
+/* Caso sobrepor o mouse, mudar de cor */
 .modal-button:hover{
     background-color: #5767f2;
     color: #e8e8e8;
 }
 
+/* Atributo para que o conteúdo não passe de tal ponto */
 .video-background-css{
-    
     overflow: hidden;
     padding-bottom: 500px;
 }
 
 /* Video de fundo da gameplay do jogo */
 .video-background{
+    /* Posição do video */
     position: absolute;
+
+    /* Video se adaptar de acordo com o tamanho escolhido */
     object-fit: cover;
+
+    /* Brilho do video definido no baixo afim de nao interferir na visualização do ícone*/
     filter: brightness(50%);
+
+    /* Tamanho */
     width:100%;
     height: 70vh;
     z-index: -1;
 }
 
+/* Atributo de posição e direção do flex */
 .image-game{
     display: flex;
     flex-direction: column;
@@ -169,6 +207,7 @@ body{
     font-size: 60px;
     width: 100%;
 
+    /* Customização */
     color: #ffffff;
 
     /* Posicionamento */
@@ -185,11 +224,13 @@ body{
 
 /* Logo do jogo centralizado na gameplay */
 .game-css{
+    /* Definindo display e tamanho */
     display: flex;
     padding: 0;
     padding-top: 50px;
     width: 45%;
     margin: 0 auto;
+    width: 20%;
 
     /* Animação de flutuação */
     animation-name: floating;
@@ -219,11 +260,14 @@ body{
 
 /* Personalização da informação da empresa */
 .info-enterprise-content{
+    /* Tamanho da Aba */
     width: 500px;
     padding: 20px;
+    margin: 0;
+
+    /* Customização */
     background-color: #e8e8e8;
     border-radius: 10px;
-    margin: 0;
 
     /* Sombra */
     -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
@@ -240,10 +284,15 @@ h1{
 
 /* Imagem da empresa localizada ao lado da informação */
 .enterprise-image{
+    /* Direção de posição */
     float: right;
+
+    /* Tamanho */
     margin: 0;
     width: 40%;
     height: 40%;
+
+    /* Transição de animação em 0.3s */
     transition-duration: 0.3s;
     
 }
@@ -266,25 +315,38 @@ h1{
 
 /* Personalização do botão que redireciona ao site sobre a Empresa */
 .about-css{
-    border: 0;
+    /* Posição */
     position: relative;
     left: 20%;
+
+    /* Tamanho e borda */
+    border: 0;
+    border-radius: 7px;
     width: 300px;
     padding: 20px;
+
+    /* Customização da fonte */
     font-size: 25px;
-    border-radius: 7px;
     color:#e8e8e8;
     text-decoration: none;
+
+    /* Cor do fundo */
     background-color: #632eb8;
+
     transition: 0.4s;
 }
 
 /* Alteração de cor e extensão quando sobreposto o cursor do mouse nela */
 .about-css:hover{
+    /* Sombra */
     -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+
+    /* Cor do fundo */
     background-color: #5767f2;
+
+    /* Transição de escala em 1.1x do seu tamanho original */
     transform: scale(1.1);
 }
 
@@ -301,6 +363,7 @@ h1{
 
 /* Personalização das Redes Sociais */
 .info-socialmedia-content{
+    /* Tamanho */
     width: 100%;
     height: 400px;
     padding: 20px;
@@ -333,19 +396,26 @@ h1{
 
 /* Botões das Redes Sociais */
 .social-button{
+    /* Customização do texto */
     text-decoration: none;
     color: #e8e8e8;
 
+    /* Tamanho */
     margin-inline: 20px;
     padding: 100px;
     padding-left: 60px;
     padding-right: 60px;
 
+    /* Borda */
     border: solid 1px #e8e8e8;
     border-radius: 50px;
 
     z-index: 1;
+
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
+
+    /* Fundo transparente */
     background: rgb(2,0,36);
     background: linear-gradient(144deg, rgba(2,0,36,0) 0%, rgba(9,9,121,0) 0%, rgba(64,93,230,0) 0%, rgba(225,48,108,0) 50%, rgba(255,220,128,0) 100%);
 }
@@ -356,23 +426,32 @@ i{
 
 /* Troca de cor do Instagram */
 .social-button.instagram:hover{
+    /* Cor e borda */
     background-color: #ec566a;
-    transform: scale(1.1);
     border-radius: 50%;
+
+    /* Transição de escala em 1.1x do seu tamanho original */
+    transform: scale(1.1);
 }
 
 /* Troca de cor do Youtube */
 .social-button.youtube:hover{
+    /* Cor e borda */
     background-color: #f25757;
-    transform: scale(1.1);
     border-radius: 50%;
+
+    /* Transição de escala em 1.1x do seu tamanho original */
+    transform: scale(1.1);
 }
 
 /* Troca de cor do Twitter */
 .social-button.twitter:hover{
+    /* Cor e borda */
     background-color: #57b9ff;
-    transform: scale(1.1);
     border-radius: 50%;
+
+    /* Transição de escala em 1.1x do seu tamanho original */
+    transform: scale(1.1);
 }
 
 /* Rodapé do WebSite */
@@ -412,11 +491,16 @@ i{
 
 /* Definição de cor da Aba de Contato */
 .contact-text{
+    /* Cor do texto */
     color: #632eb8;
+
+    /* Posição */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
@@ -449,8 +533,11 @@ a{
 
 /* Definindo os textos da nav */
 span{
+    /* Posição */
     position: relative;
     left: 3%;
+
+    /* Customização */
     font-size: 20px;
     color: #e8e8e8;
 }
@@ -467,62 +554,81 @@ span{
 
 /* Personalização do texto */
 .a-css{
+    /* Fonte */
     font-size: 20px;
     line-height: 2.3;
     float: none;
     text-align: center;
     text-decoration: none;
 
+    /* Transição de animação em 0.3s */
     transition-duration: 0.3s;
 }
 
 /* Troca de cor quando sobreposto o curso do mouse nela */
 .a-css:hover{
     color: #b457f2;
+
+    /* Transição de escala em 1.1x de seu tamanho original */
     transform: scale(1.1);
 }
 
 /* Nome da empresa */
 .enterprise-name{
+    /* Posição */
     position: relative;
     top: 23%;
     text-align: center;
+
+    /* Fonte */
     color:#bdbdbd;
     font-size: large;
 }
 
+/* Formatação de tela para dispositivos mobiles */
 @media only screen and (max-width: 480px){
+    /* Formatação do cabeçalho do WebSite */
+    /* Definição do flex em linha */
     .header-css{
         flex-direction: row;
         align-items: center;
     }
 
+    /* Definição do tamanho da logo a esquerda do cabeçalho */
     .image-css{
         width: 40%;
     }
 
-    .header-button{
-        padding: 10px;
-        font-size: 13px;
+    /* Ligando o botão lateral para abrir os botões */
+    .open-modal{
+        display: block;
     }
 
+    /* Desligando os botões do desktop */
+    .topic-css{
+        display: none;
+    }
+
+    /* Dando espaçamento abaixo do vídeo */
     .video-background-css{
         padding-bottom: 400px;
     }
 
+    /* Definição do tamanho do video */
     .video-background{
         height: 35vh;
     }
 
+    /* Definição do flex para coluna nas informações da empresa */
     .info-enterprise-css{
         flex-direction: column;
     }
 
+    /* Definição do tamanho dos textos */
     .info-enterprise-content{
         margin: auto;
         width: 250px;
     }
-
     .game-css{
         width: 70%;
     }
@@ -531,40 +637,48 @@ span{
         font-size: 40px;
     }
 
+    /* Definição da fonte do título */
     h1{
         font-size: 25px;
     }
 
+     /* Definição da fonte do texto */
     .info-text{
         font-size: 15px;
     }
 
+     /* Definição do tamanho e posição do botão */
     .about-css{
         font-size: 15px;
         width: 175px;
         left: 13%;
     }
 
+    /* Definição do tamanho e posição centralizada da imagem da empresa */
     .enterprise-image{
         padding-top: 30px;
         margin: auto;
         width: 60%;
     }
 
+    /* Definição do tamanho da aba de redes sociais */
     .info-socialmedia-content{
         height: 200px;
     }
 
+    /* Retirando a padding que causava o erro de posição dos botões */
     .navs-socialmedia{
         padding: 0;
     }
 
+    /* Definição centralizada dos botões */
     .navs-setting{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    /* Definição do tamanho dos botões */
     .social-button{
         max-width: 100px;
         text-align: center;
@@ -574,47 +688,41 @@ span{
         padding-right: 20px;
     }
 
-    .social-button:hover{
-        border-radius: 51px;
-    }
-
+    /* Definição das posições e tamanho dos ícones dos botões */
     i{
         position: inherit;
         top: 50%;
         font-size: 40px;
     }
 
+    /* Definição do tamanho do rodapé do WebSite */
     .info-footer{
         height: 750px;
     }
 
+    /* Definição do flex em coluna para ajuste */
     .info-footer-contend{
         flex-direction: column;   
     }
 
+    /* Definição dos tamanho da tab */
     .tab-footer{
         height: 200px;
     }
 
+    /* Definição das posições dos botões do rodapé */
     .nav-css{
         top: 60%;
     }
 
+    /* Definição da fonte dos links */
     .a-css{
         font-size: 15px;
         line-height: 2;
     }
 
+    /* Definição da posição do nome da empresa no final do WebSite */
     .enterprise-name{
         top: 10%;
     }
-
-    .open-modal{
-        display: block;
-    }
-
-    .topic-css{
-        display: none;
-    }
-
 }
