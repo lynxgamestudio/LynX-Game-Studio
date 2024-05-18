@@ -187,7 +187,8 @@ body{
 .game-css{
     display: flex;
     padding: 0;
-    width: 20%;
+    padding-top: 50px;
+    width: 45%;
     margin: 0 auto;
 
     /* Animação de flutuação */
@@ -490,7 +491,7 @@ span{
     font-size: large;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 480px){
     .header-css{
         flex-direction: row;
         align-items: center;
@@ -520,6 +521,14 @@ span{
     .info-enterprise-content{
         margin: auto;
         width: 250px;
+    }
+
+    .game-css{
+        width: 70%;
+    }
+
+    .warning-text{
+        font-size: 40px;
     }
 
     h1{
