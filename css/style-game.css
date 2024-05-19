@@ -20,6 +20,7 @@ body{
     margin:0;
 }
 
+
 /* Definindo o espaço do cabeçalho do WebSite */
 .header-css{
     width: 100%;
@@ -34,12 +35,8 @@ body{
     display: flex;
     z-index: 3;
 
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
-}
-
-.image-css:hover{
-    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
-    transform: scale(1.1);
 }
 
 /* Posição do cabeçalho */
@@ -51,31 +48,125 @@ body{
 
 /* Personalização do botão do cabeçalho */
 .header-button{
-    padding: 20px;
-    border-radius: 7px;
+    /* Fonte de texto */
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
 
+    /* Customização */
+    padding: 20px;
+    border-radius: 7px;
     text-decoration: none;
     color:#e8e8e8;
     background-color: #632eb8;
+
+    /* Transição de animação em 0.3s */
     transition: 0.4s;
 }
 
 /* Alteração de cor quando o mouse se sobrepor no botão */
 .header-button:hover{
+    /* Cor de fundo */
     background-color: #5767f2;
+
+    /* Brilho ao redor do botão */
     -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
     box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+
+    /* Transição de escala em 1.1x de seu tamanho original*/
     transform: scale(1.1);
 }
 
+/* Botão de abrir o modal */
+.open-modal{
+    /* Definição como invisivel no formato desktop */
+    display: none;
+
+    /* Customização */
+    border: 0;
+    background-color: rgba(0,0,0,0.0);;
+    padding-right: 30px;
+    color: #632eb8;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
+}
+
+/* Mudar de cor quando sobrepor o mouse */
+.open-modal:hover{
+    color: #5767f2;
+
+    /* Brilho ao redor do botão */
+    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
+}
+
+/* Atributos para o modal, em base manter em None e executará o block quando clicado o botão de abrir */
+.modal{
+   /* Definição como invisivel até que seja executado no botão */ 
+   display:none;
+
+   /* Posição no topo dos restantes*/
+   z-index: 5;
+
+   /* Posição do Modal */
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+/* Conteúdo do modal */
+.modal-content{
+    /* Tamanho */
+    width: 50%;
+    margin: -5% 50%;
+
+    /* Cor e Borda*/
+    background-color: #e8e8e8;
+    border-radius: 10px;
+
+     /* Sombra */
+     -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     -webkit-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+}
+
+/* Direção dos botões em coluna */
+.modal-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Design do botão que fica no modal */
+.modal-button{
+    /* Definição da fonte */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+
+    /* Tamanho */
+    width: 100%;
+
+    /* Customização */
+    padding: 10px;
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Caso sobrepor o mouse, mudar de cor */
+.modal-button:hover{
+    background-color: #5767f2;
+    color: #e8e8e8;
+}
+
+
 .purple-background{
-    z-index: -1;
+    z-index: -2;
     margin-top: 20px;
     background-color: #632eb8;
     width: 100%;
@@ -83,49 +174,51 @@ body{
 }
 
 .black-background{
-    z-index: -1;
+    z-index: -2;
     background-color: #212121;
     width: 100%;
     height: 3300px;
 }
 
-iframe{
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%);
+.iframe-position{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 .video{
-    position: relative;
-    top: 18%;
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .video-background{
-    z-index: -1;
+    position: absolute;
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 60vh;
     filter: brightness(50%);
+    z-index: 1;
 }
 
 .game-css{
-    width: 350px;
     position: relative;
-    top: -370px;
-    left: 50%;
-    transform: translate(-50%);
+    top:20%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
 }
 
 .title-about{
-    margin-top: 400px;
-    margin-bottom: auto;
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 80px;
     color: #e8e8e8;
 }
 
@@ -140,10 +233,10 @@ iframe{
 }
 
 .game-info{
-    border-radius: 15px;
-    margin: auto;
-    width: 40%;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 50%;
 }
 
 .info-text{
@@ -154,7 +247,7 @@ iframe{
     font-style: normal;
 
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: #e8e8e8;
 }
 

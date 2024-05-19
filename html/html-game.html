@@ -32,9 +32,10 @@
         <div class="header-css">
             <!-- Logo de nossa empresa, ao clicar, ela será redirecionado ao website sobre a empresa-->
             <div class="logo-css">
-                <a href="html/html-about.html"><img src="../imagem/lynx1.svg" alt="#" class="image-css"></a>
+                <img src="../imagem/lynx1.svg" alt="#" class="image-css">
             </div>
 
+            <!-- Botões que redirecionam para as outras páginas -->
             <div class="topic-css">
                 <nav>
                     <!-- Botão de encaminhamento a página principal -->
@@ -43,6 +44,31 @@
                     <a href="html-game.html" class="header-button">Burning Minds</a>
                     <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
                     <a href="html-about.html" class="header-button">Sobre nós</a>
+                </nav>
+            </div>
+
+            <!-- Versão mobile/redimensionado abaixo -->
+
+            <!-- Script para executar o modal -->
+            <script src="../js/modal.js"></script>
+
+            <!-- Botão que executa o modal -->
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
+            </div>
+        </div>
+
+        <!-- Modal que mostrará os botões que redirecionam para as outras páginas -->
+        <div class="modal" id="myModal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="modal-button">Sobre nós</a>
                 </nav>
             </div>
         </div>
@@ -54,22 +80,26 @@
             <div class="purple-background">
             </div>
             <!-- Trailer do jogo -->
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/tWTQyCrq0Ts?si=Ms4XSJE0E9yIFCls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="iframe-position">
+                <iframe width="840" height="472" src="https://www.youtube.com/embed/tWTQyCrq0Ts?si=Ms4XSJE0E9yIFCls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             
             <!-- Um video executará em looping de curtas gameplays do jogo -->
             <div class="video">
                 <video class="video-background" autoplay loop muted>
                     <source src="../imagem/teste.mp4" type="video/mp4">
                 </video>
-
                 <!-- Imagem da logo do jogo e a mensagem de "EM BREVE"-->
                 <img src="../imagem/game-logo.png" alt="#" class="game-css">
             </div>
 
+
             <!-- Aba com informações sobre o jogo -->
-            <h1 class="title-about">Sobre</h1>
-            <div class="game-info">
-                <p class="info-text">Burning Minds é um jogo de terror-psicológico que retrata a vida de um jovem adulto chamado Michael Myers, que luta contra seus pesadelos na busca da verdade de seu passado. </p>
+            <div class="infomation-game">
+                <div class="game-info">
+                    <h1 class="title-about">Sobre</h1>
+                    <p class="info-text">Burning Minds é um jogo de terror-psicológico que retrata a vida de um jovem adulto chamado Michael Myers, que luta contra seus pesadelos na busca da verdade de seu passado. </p>
+                </div>
             </div>
 
             <h1 class="title-available">Disponivel na:</h1>
