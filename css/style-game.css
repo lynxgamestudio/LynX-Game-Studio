@@ -164,7 +164,6 @@ body{
     color: #e8e8e8;
 }
 
-
 .purple-background{
     z-index: -2;
     margin-top: 20px;
@@ -567,4 +566,28 @@ span{
     /* Fonte */
     color:#bdbdbd;
     font-size: large;
+}
+
+@media only screen and (max-width:1180px){
+     /* Formatação do cabeçalho do WebSite */
+    /* Definição do flex em linha */
+    .header-css{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Definição do tamanho da logo a esquerda do cabeçalho */
+    .image-css{
+        width: 40%;
+    }
+
+    /* Ligando o botão lateral para abrir os botões */
+    .open-modal{
+        display: block;
+    }
+
+    /* Desligando os botões do desktop */
+    .topic-css{
+        display: none;
+    }
 }
