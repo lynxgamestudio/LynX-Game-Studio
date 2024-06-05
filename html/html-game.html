@@ -98,7 +98,7 @@
             <div class="infomation-game">
                 <div class="game-info">
                     <h1 class="title-about">Sobre</h1>
-                    <p class="info-text">Burning Minds é um jogo de terror-psicológico que retrata a vida de um jovem adulto chamado Michael Myers, que luta contra seus pesadelos na busca da verdade de seu passado. </p>
+                    <p class="info-text">Burning Minds é um jogo de terror-psicológico que retrata a vida de um jovem adulto chamado Michael Alden, que luta contra seus pesadelos na busca da verdade de seu passado. </p>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                     <ul>
                         <li>Ambientes diversos de acordo com a cada memória de Michael </li>
                         <li>Sistemas de ataque baseado na criatividade em desenhar </li>
-                        <li>Teste</li>
+                        <li>Sistema de coletáveis que influenciará no decorrer da história</li>
                     </ul>
                 </div>
             </div>
@@ -123,28 +123,30 @@
             <script src="../js/change-character.js"></script>
             <h1 class="title-characters">Personagens</h1>
             <div class="info-characters">
+                <!-- Imagem do personagem que estará no jogo -->
                 <div class="image-characters">
                     <img src="../imagem/character.png" alt="#" class="image-css-characters" id="img">
                 </div>
-                <div class="name-characters">
-                    <!-- Botão que vai para o personagem anterior -->
-                    <button class="button-change" onclick="opposite()">
-                        <i class="fa-solid fa-angle-left"></i>‎ <!-- Caractére Invisivel -->
-                    </button>
-
-                    <!-- Nome do Personagem-->
-                    <h1 class="name-char" id="name">Michael Alden</h1>
-
-                    <!-- Botão que vai para o próximo personagem -->
-                    <button class="button-change" onclick="next()">
-                        <i class="fa-solid fa-angle-right"></i>‎ <!-- Caractére Invisivel -->
-                    </button>
+                <div class="flex-column">
+                    <div class="name-characters">
+                        <!-- Botão que vai para o personagem anterior -->
+                        <button class="button-change" onclick="opposite()">
+                            <i class="fa-solid fa-angle-left"></i>‎ <!-- Caractére Invisivel -->
+                        </button>
+    
+                        <!-- Nome do Personagem-->
+                        <h1 class="name-char" id="name">Michael Alden</h1>
+    
+                        <!-- Botão que vai para o próximo personagem -->
+                        <button class="button-change" onclick="next()">
+                            <i class="fa-solid fa-angle-right"></i>‎ <!-- Caractére Invisivel -->
+                        </button>
+                    </div>
+                    <!-- Descrição do personagem -->
+                    <div class="describe-characters">
+                        <p class="describe-txt" id="txt-describe">Michael alden é um jovem adolescente protagonista do jogo "Burning Minds". Devido a más relações com seus pais e um acidente fatal ocorrido no parque, Michael presencia uma forma negativa de ti e com isto ele basta explorar em seus sonhos em busca de respostas, enquanto luta contra os seus transtornos</p>
+                    </div>
                 </div>
-                <!-- Descrição do personagem -->
-                <div class="describe-characters">
-                    <p class="describe-txt" id="txt-describe">Michael alden é um jovem adolescente protagonista do jogo "Burning Minds". Devido a más relações com seus pais e um acidente fatal ocorrido no parque, Michael presencia uma forma negativa de ti e com isto ele basta explorar em seus sonhos em busca de respostas, enquanto luta contra os seus transtornos</p>
-                </div>
-
             </div>
         </div>
 

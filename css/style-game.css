@@ -295,28 +295,28 @@ ul li{
 
 @keyframes changeAnimation{
     0%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
     15%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
     30%{
-        background-image: url(../imagem/game2.jpg);
+        background-image: url(../imagem/game2.png);
     }
     45%{
-        background-image: url(../imagem/game2.jpg);
+        background-image: url(../imagem/game2.png);
     }
     60%{
-        background-image: url(../imagem/game3.jpg);
+        background-image: url(../imagem/game3.png);
     }
     75%{
-        background-image: url(../imagem/game3.jpg);
+        background-image: url(../imagem/game3.png);
     }
     90%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
     100%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
 }
 
@@ -335,21 +335,36 @@ ul li{
 }
 
 .info-characters{
-    margin-top: 100px;
     width: 100%;
-    height: 600px;
+    height: 15%;
     background-color: #632eb8;
+    margin: auto;
     display: flex;
-    
+    justify-content:space-evenly;
 }
+
+.flex-column{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-characters{
+    padding: 20px;
+    width: 40%;
+}
+
+
 .image-css-characters{
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    width: 83%;
     background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(252,209,159,1) 0%, rgba(207,122,91,1) 25%, rgba(33,33,33,1) 65%, rgba(33,33,33,1) 100%);
     border: solid 3px #431381;
     border-radius: 25px;
-    margin: 50px;
     border: solid 5px #e8e8e8;
 
     transition: 0.3s;
@@ -366,15 +381,16 @@ ul li{
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
+
     color: #e8e8e8;
-    margin-top: 60px;
+
+    margin-top: 30px;
 
     transition: 0.3s;
 }
 
 .button-change{
-    margin-top: 60px;
-    z-index: 2;
+    margin-top: 30px;
     font-size: 30px;
     padding: 10px;
     width: 100px;
@@ -382,8 +398,8 @@ ul li{
     background-color: #e8e8e8;
     border-radius: 10px;
     border: 0;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     transition: 0.3s;
 }
@@ -400,18 +416,18 @@ ul li{
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
     color: #e8e8e8;
     padding: 0;
-
-    position: absolute;
-    left:57%;
-    top:455%;
 }
+
 .describe-txt{
     transition: 0.3s;
     max-width: 70%;
 }
 
+/* Nome do Personagem */
 .title-characters{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
@@ -425,7 +441,6 @@ ul li{
 
 /* Rodapé do WebSite */
 .info-footer{
-    margin-top: -40px;
     width: 100%;
     height: 500px;
     background-color: #212121;
@@ -435,6 +450,8 @@ ul li{
 .info-footer-contend{
     display: flex;
     justify-content: center;
+    grid-column-start: auto;
+    
 }
 
 /* Aba com os conteúdos do rodapé */
@@ -458,11 +475,16 @@ ul li{
 
 /* Definição de cor da Aba de Contato */
 .contact-text{
+    /* Cor do texto */
     color: #632eb8;
+
+    /* Posição */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
@@ -495,8 +517,11 @@ a{
 
 /* Definindo os textos da nav */
 span{
+    /* Posição */
     position: relative;
     left: 3%;
+
+    /* Customização */
     font-size: 20px;
     color: #e8e8e8;
 }
@@ -513,26 +538,33 @@ span{
 
 /* Personalização do texto */
 .a-css{
+    /* Fonte */
     font-size: 20px;
     line-height: 2.3;
     float: none;
     text-align: center;
     text-decoration: none;
 
+    /* Transição de animação em 0.3s */
     transition-duration: 0.3s;
 }
 
 /* Troca de cor quando sobreposto o curso do mouse nela */
 .a-css:hover{
     color: #b457f2;
+
+    /* Transição de escala em 1.1x de seu tamanho original */
     transform: scale(1.1);
 }
 
 /* Nome da empresa */
 .enterprise-name{
+    /* Posição */
     position: relative;
     top: 23%;
     text-align: center;
+
+    /* Fonte */
     color:#bdbdbd;
     font-size: large;
 }
