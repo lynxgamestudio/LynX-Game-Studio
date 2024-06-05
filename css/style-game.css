@@ -89,6 +89,7 @@ body{
     border: 0;
     background-color: rgba(0,0,0,0.0);;
     padding-right: 30px;
+    font-size: 250%;
     color: #632eb8;
 
     /* Transição de animação em 0.3s */
