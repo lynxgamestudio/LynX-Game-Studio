@@ -186,6 +186,11 @@ body{
     padding: 50px;
 }
 
+iframe{
+    width: 840px;
+    height: 472px;
+}
+
 .video{
     width: 100%;
     height: 60vh;
@@ -424,7 +429,7 @@ ul li{
 
 .describe-txt{
     transition: 0.3s;
-    max-width: 70%;
+    width: 70%;
 }
 
 /* Nome do Personagem */
@@ -590,5 +595,134 @@ span{
     /* Desligando os botões do desktop */
     .topic-css{
         display: none;
+    }
+
+    .purple-background{
+        height: 50px;
+    }
+
+    iframe{
+        width:420px;
+        height:286px;
+    }
+
+    .video{
+        height: 40vh;
+    }
+
+    .video-background{
+        height: 40vh;
+    }
+
+    .game-css{
+        width: 70%;
+    }
+
+    .title-about{
+        font-size: 50px;
+    }
+
+    .game-info{
+        width: 75%;
+    }
+
+    .info-text{
+        font-size: 20px;
+    }
+
+    .itch-image{
+        width: 75%;
+    }
+
+    .info-features{
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .info-image-size{
+        width: 100%;
+        height: 350px;
+    }
+
+    ul li{
+        padding: 10px;
+    }
+
+    .features-content{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .features-title{
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-characters{
+        flex-direction: column;
+        height: 30%;
+    }
+
+    .flex-column{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-characters{
+        padding: 0;
+        padding: 7.25%;
+        width: 100%;
+    }
+
+    .image-css-characters{
+        padding: 0;
+        margin: auto;
+    }
+
+    .button-change{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .describe-characters{
+        width: 90%;
+    }
+
+    .describe-txt{
+        width: 100%;
+    }
+
+    /* Definição do tamanho do rodapé do WebSite */
+    .info-footer{
+        height: 750px;
+    }
+
+    /* Definição do flex em coluna para ajuste */
+    .info-footer-contend{
+        flex-direction: column;   
+    }
+
+    /* Definição dos tamanho da tab */
+    .tab-footer{
+        height: 200px;
+    }
+
+    /* Definição das posições dos botões do rodapé */
+    .nav-css{
+        top: 60%;
+    }
+
+    /* Definição da fonte dos links */
+    .a-css{
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    /* Definição da posição do nome da empresa no final do WebSite */
+    .enterprise-name{
+        top: 10%;
     }
 }
