@@ -575,6 +575,10 @@ span{
 }
 
 @media only screen and (max-width:1180px){
+    body{
+        max-width: 100%;
+    }
+
      /* Formatação do cabeçalho do WebSite */
     /* Definição do flex em linha */
     .header-css{
@@ -681,6 +685,8 @@ span{
         padding: 0;
         margin: auto;
     }
+
+    .name-cha
 
     .button-change{
         margin-left: 0;
