@@ -165,14 +165,21 @@ body{
     color: #e8e8e8;
 }
 
+/* Linha Roxa */
 .purple-background{
+    /* Camada */
     z-index: -2;
-    margin-top: 20px;
+
+    /* Cor de fundo */
     background-color: #632eb8;
+
+    /* Tamanho e posição */
+    margin-top: 20px;
     width: 100%;
     height: 100px;
 }
 
+/* Plano de fundo escuro */
 .black-background{
     z-index: -2;
     background-color: #212121;
@@ -180,17 +187,21 @@ body{
     height: 3300px;
 }
 
+/* Posição do trailer do jogo */
 .iframe-position{
     display: flex;
     justify-content: center;
     padding: 50px;
 }
 
+/* Tamanho do trailer */
 iframe{
     width: 840px;
     height: 472px;
 }
 
+
+/* Tamanho e posição do video que irá reproduzir curtas gameplays do jogo */
 .video{
     width: 100%;
     height: 60vh;
@@ -198,6 +209,7 @@ iframe{
     padding-bottom: 50px;
 }
 
+/* Aplicação de escuridez e tamanho */
 .video-background{
     position: absolute;
     object-fit: cover;
@@ -207,6 +219,8 @@ iframe{
     z-index: 1;
 }
 
+
+/* Logo do Jogo que irá sobrepor o vídeo */
 .game-css{
     position: relative;
     top:20%;
@@ -217,6 +231,7 @@ iframe{
     width: 40%;
 }
 
+/* Título sobre o jogo */
 .title-about{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
@@ -227,6 +242,7 @@ iframe{
     color: #e8e8e8;
 }
 
+/* Título de disponibilidade do jogo */
 .title-available{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;

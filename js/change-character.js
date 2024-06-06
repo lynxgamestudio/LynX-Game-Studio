@@ -40,7 +40,7 @@ var describe = [
     // Willian Stone
     'Willian Stones é um dos amigos de Michael, um rapaz aparentemente frio, mas não tira o fato de ser carinhoso com os próximos. Devido sua frieza, suas atitudes não é la grande coisa, por agir rancoroso e responder sarcasticamente, além de seus problemas de raiva.',
     // Sarah Evans
-    'Sarah Evan é um dos amigos de Michael, uma garota garota tranquila, gentil e carinhosa, uma bela amiga para se ter conselhos, possui uma paixão pela música, leitura e a natureza, além por um amor profundo por Michael.'
+    'Sarah Evan é um dos amigos de Michael, uma garota tranquila, gentil e carinhosa, uma bela amiga para se ter conselhos, possui uma paixão pela música, leitura e a natureza, além por um amor profundo por Michael.'
 ]
 
 // Cores de fundo dos personagens
