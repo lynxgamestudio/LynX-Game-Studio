@@ -673,7 +673,7 @@ span{
 
     .image-characters{
         padding: 0;
-        padding: 7.25%;
+        margin: auto;
         width: 100%;
     }
 
