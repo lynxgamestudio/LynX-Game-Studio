@@ -727,3 +727,9 @@ span{
         top: 10%;
     }
 }
+
+@media only screen and (max-width:1980px){
+    .image-css-characters{
+        width: 75%;
+    }
+}
