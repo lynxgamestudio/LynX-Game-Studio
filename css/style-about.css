@@ -602,6 +602,7 @@ span{
     }
 
     .image-process{
+     padding:0;
      padding-top: 30px;
      padding-bottom: 30px;
      width: 200%;
