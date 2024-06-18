@@ -674,6 +674,7 @@ span{
     .image-characters{
         padding: 0;
         margin: auto;
+        display:flex;
         width: 100%;
     }
 
