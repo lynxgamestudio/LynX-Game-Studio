@@ -23,7 +23,7 @@ var token = 0;
             document.getElementById("img").src = images[token];
             // Define a opacidade como 1 após a troca
             document.getElementById("img").style.opacity = 1;
-        }, 300); // Espera 0.3s (tempo da transição) antes de trocar a imagem
+        }, 600); // Espera 0.6s (tempo da transição) antes de trocar a imagem
     }
 
     //Retroceder na imagem
