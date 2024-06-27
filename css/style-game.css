@@ -316,28 +316,28 @@ ul li{
 
 @keyframes changeAnimation{
     0%{
-        background-image: url(../imagem/game1.png);
+        background-image: url(../imagem/game1.jpg);
     }
     15%{
-        background-image: url(../imagem/game1.png);
+        background-image: url(../imagem/game1.jpg);
     }
     30%{
-        background-image: url(../imagem/game2.png);
+        background-image: url(../imagem/game2.jpg);
     }
     45%{
-        background-image: url(../imagem/game2.png);
+        background-image: url(../imagem/game2.jpg);
     }
     60%{
-        background-image: url(../imagem/game3.png);
+        background-image: url(../imagem/game3.jpg);
     }
     75%{
-        background-image: url(../imagem/game3.png);
+        background-image: url(../imagem/game3.jpg);
     }
     90%{
-        background-image: url(../imagem/game1.png);
+        background-image: url(../imagem/game1.jpg);
     }
     100%{
-        background-image: url(../imagem/game1.png);
+        background-image: url(../imagem/game1.jpg);
     }
 }
 
@@ -623,7 +623,7 @@ span{
 
     iframe{
         width:420px;
-        height:286px;
+        height:236px;
     }
 
     .video{
@@ -693,7 +693,8 @@ span{
 
     .image-characters{
         padding: 0;
-        padding: 7.25%;
+        margin: auto;
+        display:flex;
         width: 100%;
     }
 
@@ -746,5 +747,11 @@ span{
     /* Definição da posição do nome da empresa no final do WebSite */
     .enterprise-name{
         top: 10%;
+    }
+}
+
+@media only screen and (max-width:1980px){
+    .image-css-characters{
+        width: 67.5%;
     }
 }
