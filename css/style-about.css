@@ -1,171 +1,184 @@
 /* Definindo a fonte padrão e plano de fundo do WebSite */
-html{
+
+html {
     /* Plano de fundo do WebSite */
     background-color: #e8e8e8;
-
     /* Fonte de texto padrão do WebSite */
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-
     /* Proibição de scroll horizontal em caso de posição além dos 100% */
     max-width: 100%;
     overflow-x: hidden;
 }
 
+
 /* Retirando a borda branca que ficava em todo WebSite */
-body{
-    padding:0;
-    margin:0;
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 
 /* Definindo o espaço do cabeçalho do WebSite */
-.header-css{
+
+.header-css {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-  
+
+
 /* Logo da empresa no rodapé do WebSite */
-.image-css{
+
+.image-css {
     width: 50%;
     padding: 10px;
     display: flex;
     z-index: 3;
-
     /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
+
 /* Posição do cabeçalho */
-.topic-css{
+
+.topic-css {
     padding-top: 50px;
     padding-right: 5%;
     float: right;
 }
 
+
 /* Personalização do botão do cabeçalho */
-.header-button{
+
+.header-button {
     /* Fonte de texto */
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-
     /* Customização */
     padding: 20px;
     border-radius: 7px;
     text-decoration: none;
-    color:#e8e8e8;
+    color: #e8e8e8;
     background-color: #632eb8;
-
     /* Transição de animação em 0.3s */
     transition: 0.4s;
 }
 
+
 /* Alteração de cor quando o mouse se sobrepor no botão */
-.header-button:hover{
+
+.header-button:hover {
     /* Cor de fundo */
     background-color: #5767f2;
-
     /* Brilho ao redor do botão */
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
-    box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
-
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(46, 58, 230, 1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46, 58, 230, 1);
+    box-shadow: 0px 0px 16px 0px rgba(46, 58, 230, 1);
     /* Transição de escala em 1.1x de seu tamanho original*/
     transform: scale(1.1);
 }
 
+
 /* Botão de abrir o modal */
-.open-modal{
+
+.open-modal {
     /* Definição como invisivel no formato desktop */
     display: none;
-
     /* Customização */
     border: 0;
-    background-color: rgba(0,0,0,0.0);;
+    background-color: rgba(0, 0, 0, 0.0);
+    ;
     padding-right: 30px;
     color: #632eb8;
-
     /* Transição de animação em 0.3s */
     transition: 0.3s;
 }
 
-/* Mudar de cor quando sobrepor o mouse */
-.open-modal:hover{
-    color: #5767f2;
 
+/* Mudar de cor quando sobrepor o mouse */
+
+.open-modal:hover {
+    color: #5767f2;
     /* Brilho ao redor do botão */
     filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
 }
 
+
 /* Atributos para o modal, em base manter em None e executará o block quando clicado o botão de abrir */
-.modal{
-   /* Definição como invisivel até que seja executado no botão */ 
-   display:none;
 
-   /* Posição no topo dos restantes*/
-   z-index: 5;
-
-   /* Posição do Modal */
-   position: absolute;
-   width: 100%;
-   height: 100%;
+.modal {
+    /* Definição como invisivel até que seja executado no botão */
+    display: none;
+    /* Posição no topo dos restantes*/
+    z-index: 5;
+    /* Posição do Modal */
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
+
 /* Conteúdo do modal */
-.modal-content{
+
+.modal-content {
     /* Tamanho */
     width: 50%;
     margin: -5% 50%;
-
     /* Cor e Borda*/
     background-color: #e8e8e8;
     border-radius: 10px;
-
-     /* Sombra */
-     -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
-     -webkit-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
-     box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+    /* Sombra */
+    -moz-box-shadow: -1px -1px 50px -10px rgba(115, 115, 115, 0.75);
+    -webkit-box-shadow: -1px -1px 50px -10px rgba(115, 115, 115, 0.75);
+    box-shadow: -1px -1px 50px -10px rgba(115, 115, 115, 0.75);
 }
 
+
 /* Direção dos botões em coluna */
-.modal-nav{
+
+.modal-nav {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+
 /* Design do botão que fica no modal */
-.modal-button{
+
+.modal-button {
     /* Definição da fonte */
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     transition: 0.3s;
-
     /* Tamanho */
     width: 100%;
-
     /* Customização */
     padding: 10px;
     text-decoration: none;
     color: #212121;
 }
 
+
 /* Caso sobrepor o mouse, mudar de cor */
-.modal-button:hover{
+
+.modal-button:hover {
     background-color: #5767f2;
     color: #e8e8e8;
 }
 
+
 /* Linha roxa usada para transição ao fundo preto a seguir */
-.purple-background{
+
+.purple-background {
     z-index: -1;
     margin-top: 20px;
     background-color: #632eb8;
@@ -173,16 +186,20 @@ body{
     height: 100px;
 }
 
+
 /* Fundo preto em que ficará todo conteúdo do WebSite */
-.black-background{
+
+.black-background {
     z-index: -1;
     background-color: #212121;
     width: 100%;
     height: 3800px;
 }
 
+
 /* Logo de nossa empresa */
-.enterprise-image{
+
+.enterprise-image {
     display: flex;
     width: 35%;
     padding-top: 50px;
@@ -190,21 +207,24 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-
 }
 
+
 /* Informações sobre a empresa */
-.info-text{
+
+.info-text {
     margin: auto;
     width: 60%;
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
-    color:#e8e8e8;
+    color: #e8e8e8;
     font-size: 26px;
 }
 
+
 /* Título que fala sobre a equipe */
-.title-team{
+
+.title-team {
     color: #e8e8e8;
     margin: auto;
     text-align: center;
@@ -212,8 +232,10 @@ body{
     padding: 40px;
 }
 
+
 /* Plano de fundo do membro 1: Alysson */
-.member-1{
+
+.member-1 {
     background-color: #e8e8e8;
     width: 100%;
     height: 500px;
@@ -222,8 +244,10 @@ body{
     flex-direction: row-reverse;
 }
 
+
 /* Plano de fundo do membro 2: Cauã */
-.member-2{
+
+.member-2 {
     background-color: #632eb8;
     width: 100%;
     height: 500px;
@@ -232,8 +256,10 @@ body{
     flex-direction: row;
 }
 
+
 /* Plano de fundo do membro 3: Diego */
-.member-3{
+
+.member-3 {
     background-color: #414141;
     width: 100%;
     height: 500px;
@@ -242,18 +268,22 @@ body{
     flex-direction: row-reverse;
 }
 
+
 /* Localização de informação do membro Alysson */
-.member-info1{
+
+.member-info1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
-    width:50%;
+    width: 50%;
 }
 
+
 /* Localização de informação do membro Cauã */
-.member-info2{
+
+.member-info2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,18 +292,22 @@ body{
     width: 50%;
 }
 
+
 /* Localização de informação do membro Diego */
-.member-info3{
+
+.member-info3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width:50%;
+    width: 50%;
 }
 
+
 /* Nome membro */
-.name-member{
+
+.name-member {
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
     padding: 20px;
@@ -281,75 +315,101 @@ body{
     font-size: 40px;
 }
 
+
 /* Cor do membro Alysson */
-.name-member.m1{
+
+.name-member.m1 {
     color: #632eb8;
 }
 
+
 /* Cor do membro Cauã */
-.name-member.m2{
+
+.name-member.m2 {
     color: #e8e8e8;
 }
+
 
 /* Cor do membro Diego */
-.name-member.m3{
+
+.name-member.m3 {
     color: #e8e8e8;
 }
 
+
 /* Personalização do texto */
-.text-member{
+
+.text-member {
     text-align: center;
     font-size: 25px;
     width: 70%;
 }
 
+
 /* Cor do texto Alysson */
-.text-member.m1{
+
+.text-member.m1 {
     color: #632eb8;
 }
 
+
 /* Cor do texto Cauã */
-.text-member.m2{
+
+.text-member.m2 {
     color: #e8e8e8;
 }
+
 
 /* Cor do texto Diego */
-.text-member.m3{
+
+.text-member.m3 {
     color: #e8e8e8;
 }
 
+
 /* Personalização da imagem de cada membro */
-.img-member{
+
+.img-member {
     z-index: 1;
     object-fit: cover;
     height: 100%;
     width: 50%;
 }
 
+
 /* Posição da imagem do Alysson */
-.img-member.m1{
+
+.img-member.m1 {
     float: right;
 }
 
+
 /* Posição da imagem do Cauã */
-.img-member.m2{
+
+.img-member.m2 {
     float: left;
 }
 
+
 /* Posição da imagem do Diego */
-.img-member.m3{
+
+.img-member.m3 {
     float: right;
 }
 
+
 /* Linha Roxa */
-.line-purple{
+
+.line-purple {
     background-color: #632eb8;
     width: 100%;
     height: 50px;
 }
 
+
 /* Botões de retroceder e proceder */
-.button-change{
+
+.button-change {
     font-size: 80px;
     padding: 10px;
     height: 100px;
@@ -357,67 +417,82 @@ body{
     border-radius: 10px;
     background-color: #632eb8;
     color: #e8e8e8;
-
     margin-top: 30%;
     transition: 0.6s;
 }
 
+
 /* Troca de cor quando o mouse sobrepor o botão */
-.button-change:hover{
+
+.button-change:hover {
     background-color: #5767f2;
 }
 
+
 /* Tamanho da imagem */
-.image-process{
+
+.image-process {
     z-index: -1;
     padding: 50px;
     width: 870px;
     transition: opacity 0.5s ease-in-out;
 }
 
+
 /* Posição dos botões */
-.button-image{
+
+.button-image {
     display: flex;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
 
+
 /* Rodapé do WebSite */
-.info-footer{
+
+.info-footer {
     margin-top: -40px;
     width: 100%;
     height: 500px;
     background-color: #212121;
 }
 
+
 /* Definição pro tipo flex */
-.info-footer-contend{
+
+.info-footer-contend {
     display: flex;
     justify-content: center;
 }
 
+
 /* Aba com os conteúdos do rodapé */
-.tab-footer{
+
+.tab-footer {
     width: 100%;
     position: relative;
-    transform: translate(0%,35%);
+    transform: translate(0%, 35%);
     height: 300px;
 }
 
+
 /* Personalização do contato */
-.tab-footer.contact{
+
+.tab-footer.contact {
     background-color: #e8e8e8;
     color: #632eb8;
     text-align: center;
 }
 
-.contact-title{
+.contact-title {
     color: #632eb8;
 }
 
+
 /* Definição de cor da Aba de Contato */
-.contact-text{
+
+.contact-text {
     color: #632eb8;
     position: absolute;
     top: 50%;
@@ -426,43 +501,55 @@ body{
     transition: 0.3s;
 }
 
-.contact-text:hover{
+.contact-text:hover {
     color: #b457f2;
 }
 
+
 /* Personalização da Navegação */
-.tab-footer.navegation{
+
+.tab-footer.navegation {
     background-color: #632eb8;
 }
 
+
 /* Personalização das Redes Sociais */
-.tab-footer.socialmedia{
+
+.tab-footer.socialmedia {
     background-color: #414141;
 }
 
+
 /* Títulos das Abas */
-h2{
+
+h2 {
     padding: 0px;
     font-size: 30px;
     text-align: center;
     color: #e8e8e8;
 }
 
+
 /* Colorindo os redirecionamento */
-a{
+
+a {
     color: #e8e8e8;
 }
 
+
 /* Definindo os textos da nav */
-span{
+
+span {
     position: relative;
     left: 3%;
     font-size: 20px;
     color: #e8e8e8;
 }
 
+
 /* Posicionamento dos botões do Rodapé */
-.nav-css{
+
+.nav-css {
     text-align: center;
     float: none;
     position: absolute;
@@ -471,39 +558,46 @@ span{
     transform: translate(-50%, -50%);
 }
 
+
 /* Personalização do texto */
-.a-css{
+
+.a-css {
     font-size: 20px;
     line-height: 2.3;
     float: none;
     text-align: center;
     text-decoration: none;
-
     transition-duration: 0.3s;
 }
 
+
 /* Troca de cor quando sobreposto o curso do mouse nela */
-.a-css:hover{
+
+.a-css:hover {
     color: #b457f2;
     transform: scale(1.1);
 }
 
+
 /* Nome da empresa */
-.enterprise-name{
+
+.enterprise-name {
     position: relative;
     top: 23%;
     text-align: center;
-    color:#bdbdbd;
+    color: #bdbdbd;
     font-size: large;
 }
 
-.enterprise-mission-vision-values{
+.enterprise-mission-vision-values {
     padding-top: 100px;
     display: flex;
     justify-content: space-around;
 }
 
-.ab-enterprise{
+.ab-enterprise {
+    width: 25%;
+    height: 500px;
     color: #e8e8e8;
     background-color: #632eb8;
     padding: 30px;
@@ -513,172 +607,147 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-
     transition: 0.4s;
 }
 
-.ab-enterprise:hover{
+.ab-enterprise:hover {
     background-color: #e8e8e8;
-    -webkit-box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
-    -moz-box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
-    box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
-
+    -webkit-box-shadow: 0px 0px 36px -12px rgba(232, 232, 232, 1);
+    -moz-box-shadow: 0px 0px 36px -12px rgba(232, 232, 232, 1);
+    box-shadow: 0px 0px 36px -12px rgba(232, 232, 232, 1);
     color: #632eb8;
 }
 
-.title-size{
+.title-size {
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 40px;
+    padding-bottom: 20px;
 }
 
-.logo{
+.logo {
     font-size: 100px;
 }
 
+
 /* Formatação de tela para dispositivos mobiles */
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1000px) {
     /* Formatação do cabeçalho do WebSite */
     /* Definição do flex em linha */
-    .header-css{
+    .header-css {
         flex-direction: row;
         align-items: center;
     }
-
     /* Definição do tamanho da logo a esquerda do cabeçalho */
-    .image-css{
+    .image-css {
         width: 40%;
     }
-
     /* Ligando o botão lateral para abrir os botões */
-    .open-modal{
+    .open-modal {
         display: block;
     }
-
     /* Desligando os botões do desktop */
-    .topic-css{
+    .topic-css {
         display: none;
     }
-
     /* Definição das posições e tamanho dos ícones dos botões */
-    i{
+    i {
         font-size: 40px;
     }
-
-    .black-background{
+    .black-background {
         height: 2950px;
     }
-
-    .enterprise-image{
+    .enterprise-image {
         width: 70%;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
-    .info-text{
+    .info-text {
         width: 80%;
         margin-top: 0;
         font-size: 16px;
     }
-
-    .title-team{
+    .title-team {
         font-size: 40px;
     }
-
-    .member-1{
+    .member-1 {
         flex-direction: column;
     }
-
-    .member-2{
+    .member-2 {
         flex-direction: column;
     }
-
-    .member-3{
+    .member-3 {
         flex-direction: column;
     }
-
-    .name-member{
+    .name-member {
         font-size: 20px;
     }
-
-    .img-member{
+    .img-member {
         width: 100%;
         height: 50%;
         float: none;
     }
-    
-    .text-member{
+    .text-member {
         width: 90%;
         font-size: 16px;
     }
-
-    .member-info1{
+    .member-info1 {
         width: 100%;
         height: 100%;
     }
-
-    .member-info2{
+    .member-info2 {
         width: 100%;
         height: 100%;
     }
-
-    .member-info3{
+    .member-info3 {
         width: 100%;
         height: 100%;
     }
-
-    .button-image{
+    .button-image {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-
-    .button-change{
+    .button-change {
         margin-top: 0;
         width: 75%;
         height: 50px;
     }
-
-    .image-process{
-     padding:0;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     width: 200%;
+    .image-process {
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 200%;
     }
-
-    #button-position{
+    #button-position {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     /* Definição do tamanho do rodapé do WebSite */
-    .info-footer{
+    .info-footer {
         height: 750px;
     }
-
     /* Definição do flex em coluna para ajuste */
-    .info-footer-contend{
-        flex-direction: column;   
+    .info-footer-contend {
+        flex-direction: column;
     }
-
     /* Definição dos tamanho da tab */
-    .tab-footer{
+    .tab-footer {
         height: 200px;
     }
-
     /* Definição das posições dos botões do rodapé */
-    .nav-css{
+    .nav-css {
         top: 60%;
     }
-
     /* Definição da fonte dos links */
-    .a-css{
+    .a-css {
         font-size: 15px;
         line-height: 2;
     }
-
     /* Definição da posição do nome da empresa no final do WebSite */
-    .enterprise-name{
+    .enterprise-name {
         top: 10%;
     }
 }
