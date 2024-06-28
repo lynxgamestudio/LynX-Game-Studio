@@ -497,6 +497,43 @@ span{
     font-size: large;
 }
 
+.enterprise-mission-vision-values{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ab-enterprise{
+    color: #e8e8e8;
+    background-color: #632eb8;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+.ab-enterprise:hover{
+    background-color: #e8e8e8;
+    -webkit-box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
+    -moz-box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
+    box-shadow: 0px 0px 36px -12px rgba(232,232,232,1);
+
+    color: #632eb8;
+}
+
+.title-size{
+    font-size: 40px;
+}
+
+.logo{
+    font-size: 100px;
+}
+
 /* Formatação de tela para dispositivos mobiles */
 @media only screen and (max-width: 1000px){
     /* Formatação do cabeçalho do WebSite */
