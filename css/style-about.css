@@ -665,9 +665,6 @@ li{
     i {
         font-size: 40px;
     }
-    .black-background {
-        height: 2950px;
-    }
     .enterprise-image {
         width: 70%;
         padding-top: 20px;
@@ -729,7 +726,7 @@ li{
         padding: 0;
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 200%;
+        width: 100%;
     }
     #button-position {
         display: flex;
