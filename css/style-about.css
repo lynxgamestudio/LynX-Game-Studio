@@ -642,7 +642,7 @@ li{
 
 /* Formatação de tela para dispositivos mobiles */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
     /* Formatação do cabeçalho do WebSite */
     /* Definição do flex em linha */
     .header-css {

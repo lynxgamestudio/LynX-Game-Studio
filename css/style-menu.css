@@ -593,7 +593,7 @@ span{
 }
 
 /* Formatação de tela para dispositivos mobiles */
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 768px){
     /* Formatação do cabeçalho do WebSite */
     /* Definição do flex em linha */
     .header-css{
@@ -693,8 +693,6 @@ span{
         text-align: center;
         margin-inline: 10px;
         padding: 25px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     /* Definição das posições e tamanho dos ícones dos botões */
